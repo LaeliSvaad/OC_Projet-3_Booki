@@ -9,17 +9,23 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
+.fa-solid{
     color: var(--main-color);
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
     display: flex;
     justify-content: center;
+    background-color: white;
+    margin: 0px;
 }
 
 .main-container {
     width: 100%;
+    min-width: 1025px;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
@@ -56,6 +62,101 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+/****** Header ***********/
+header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 62px;
+    height: 20px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+nav{
+    width: 20%;
+}
+
+nav, .navigation-list, .navigation-list li{
+    height: 100%;
+}
+
+.navigation-list{
+    height: 100%;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation-list li{
+    border-top: transparent 2px solid;
+    padding-top: 10px;
+}
+
+.navigation-list li:hover{
+    border-top-color: var(--main-color);
+    color: var(--main-color);
+}
+
+/****** Recherche ***********/
+.search-bar{
+    height: 50px;
+}
+.search-bar form{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.search-bar label{
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+    border-left: 1px solid var(--main-bg-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: var(--main-bg-color);
+}
+
+.text-field{
+    border: 0px;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
+    outline: none;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.submit-button{
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+}
+
+.fa-location-dot{
+    color: black;
+    height: 100%;
+    width: 50px;
+}
+
+.fa-info{
+    height: 25px;
+    width: 25px;
+    border: 3px solid var(--main-bg-color);
+    border-radius: 50% 50% 50% 50%;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -132,6 +233,18 @@ a {
     border-top-right-radius: 20px;
 }
 
+footer{
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footer-block{
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 33%
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
