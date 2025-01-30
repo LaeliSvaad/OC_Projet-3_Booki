@@ -76,6 +76,11 @@ a {
     width: 65%;
 }
 
+.hebergements-cards img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -121,6 +126,11 @@ a {
     margin-bottom: 5px;
 }
 
+/****** Activites ***********/
+.activites-cards img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
 
 
 
