@@ -106,8 +106,13 @@ nav, .navigation-list, .navigation-list li{
 }
 
 /****** Recherche ***********/
-.recherche >p, .recherche >div, .recherche >h2{
-    margin-top: 20px;
+.recherche >div{
+    margin-top: 30px;
+}
+
+.recherche >p{
+    margin-top: 5px;
+    margin-bottom: 0px;
 }
 
 .recherche .fa-solid{
