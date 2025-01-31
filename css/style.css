@@ -64,6 +64,7 @@ a {
 /****** Header ***********/
 header {
     height: 80px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,7 +98,7 @@ nav, .navigation-list, .navigation-list li{
 
 .navigation-list li{
     border-top: transparent 2px solid;
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 .navigation-list li:hover{
