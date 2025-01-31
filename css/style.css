@@ -11,9 +11,6 @@
 
 .fa-solid{
     color: var(--main-color);
-    display:flex;
-    align-items: center;
-    justify-content: center;
 }
 
 body {
@@ -109,9 +106,26 @@ nav, .navigation-list, .navigation-list li{
 }
 
 /****** Recherche ***********/
+.recherche >p, .recherche >div, .recherche >h2{
+    margin-top: 20px;
+}
+
+.recherche .fa-solid{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .search-bar{
     height: 50px;
 }
+
+.fa-location-dot{
+    color: black;
+    height: 100%;
+    width: 50px;
+}
+
 .search-bar form{
     height: 100%;
     display: flex;
@@ -132,6 +146,7 @@ nav, .navigation-list, .navigation-list li{
     border: 0px;
     border-top: 1px solid var(--main-bg-color);
     border-bottom: 1px solid var(--main-bg-color);
+    padding: 0px;
     outline: none;
     background-color: white;
     color: black;
@@ -143,19 +158,52 @@ nav, .navigation-list, .navigation-list li{
     border: 1px solid var(--main-color);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: white;
 }
 
-.fa-location-dot{
-    color: black;
-    height: 100%;
-    width: 50px;
+.text-field, .submit-button, .filter{
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.filters, .information{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.filter{
+    margin-left: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid var(--main-bg-color);
+    border-radius: 40px;
+}
+
+.search-bar i, .filter i{
+    font-size: larger;
+}
+
+.filter i, .information i{
+    margin-right: 15px;
+}
+
+.filter p{
+    margin: 0px;
+}
+
+.filter:hover{
+    background-color: var(--filter-bg-color);
 }
 
 .fa-info{
     height: 25px;
     width: 25px;
-    border: 3px solid var(--main-bg-color);
+    border: 2px solid var(--main-bg-color);
     border-radius: 50% 50% 50% 50%;
 }
 
