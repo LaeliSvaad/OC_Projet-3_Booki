@@ -28,6 +28,10 @@ body {
     box-sizing: border-box;
 }
 
+.recherche, .hebergements-and-populaires, .activites {
+    margin-bottom: 30px;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -39,6 +43,7 @@ a {
 }
 
 .card {
+    margin-top: 33px;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -90,23 +95,29 @@ nav, .navigation-list, .navigation-list li{
 .navigation-list{
     height: 100%;
     margin: 0px;
+    padding: 0px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 100%;
 }
 
 .navigation-list li{
     border-top: transparent 2px solid;
     padding-top: 12px;
 }
-
+  
 .navigation-list li:hover{
     border-top-color: var(--main-color);
     color: var(--main-color);
 }
 
 /****** Recherche ***********/
+/*.recherche{
+    margin-bottom: 30px;
+}*/
+
 .recherche >div{
     margin-top: 30px;
 }
@@ -217,6 +228,7 @@ nav, .navigation-list, .navigation-list li{
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start
 }
 
 .hebergements-and-populaires section {
@@ -229,9 +241,26 @@ nav, .navigation-list, .navigation-list li{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.hebergements-cards a {
+    width: 30%;
 }
 
 .hebergements-cards img{
+    width: 100%;
+    height: 130px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -249,7 +278,6 @@ nav, .navigation-list, .navigation-list li{
 
 .populaires-cards .card {
     display: flex;
-    margin-top: 33px;
 }
 
 .populaires-cards img {
@@ -282,11 +310,32 @@ nav, .navigation-list, .navigation-list li{
 }
 
 /****** Activites ***********/
+.activites {
+    padding: 30px;
+}
+
+.activites-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activites-cards a{
+    width: 24%;
+}
+
+.activites-cards .card{
+    height: 440px;
+}
+
 .activites-cards img{
+    height: 380px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
+/****** Footer ***********/
 footer{
     background-color: var(--main-bg-color);
     display: flex;
