@@ -7,7 +7,6 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
-    background-color: gainsboro;
 }
 .fa-solid{
     color: var(--main-color);
@@ -241,6 +240,7 @@ header i{
     padding: 15px;
     display: flex;
     flex-direction: row;
+    background-color: white;
     border: 2px solid var(--main-bg-color);
     border-radius: 40px;
     transition: 0.3s;
